@@ -11,11 +11,13 @@
 
 return [
     '__pattern__' => [
-        'name' => '\w+',
+//        'blogs' => '\w+',
+         'blogs' =>  'index/blog'
     ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
+
+//    '[hello]'     => [
+//        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
+//        ':name' => ['index/hello', ['method' => 'post']],
+//    ],
 
 ];
