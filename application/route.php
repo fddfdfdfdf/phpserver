@@ -9,15 +9,19 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-return [
-    '__pattern__' => [
-//        'blogs' => '\w+',
-         'blogs' =>  'index/hello'
-    ],
+use think\Route;
+// 注册路由到index模块的News控制器的read操作
+Route::get('/blogs/dds',function(){
+    return 'Hello,world!dds';
+});
 
-//    '[hello]'     => [
+Route::get('/blogs/dd',function(){
+    return 'Hello,world!dd';
+});
+
+
+//return [
+//    '/'     => [
 //        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-//        ':name' => ['index/hello', ['method' => 'post']],
-//    ],
-
-];
+//    ]
+//];
