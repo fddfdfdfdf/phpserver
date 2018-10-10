@@ -12,7 +12,7 @@
 return [
     '__pattern__' => [
 //        'blogs' => '\w+',
-         'blogs' =>  'index/blog'
+         'blogs' =>  'index/hello'
     ],
 
 //    '[hello]'     => [
