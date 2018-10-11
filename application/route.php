@@ -11,11 +11,11 @@
 
 use think\Route;
 // 注册路由到index模块的News控制器的read操作
-Route::get('/dds',function(){
+Route::get('/blogs/dds',function(){
     return 'Hello,world!dds';
 });
 
-Route::get('/dd',function(){
+Route::get('/blogs/dd',function(){
     return 'Hello,world!dd';
 });
 
