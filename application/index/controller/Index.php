@@ -4,7 +4,7 @@ use app\index\model\MyUser;
 use think\Db;
 use think\db\Query;
 use think\Controller;
-use Redis\RedisServer;
+use Redis\RedisPackage;
 class Index extends Controller
 {
     public function index()
@@ -43,7 +43,7 @@ class Index extends Controller
 //          return $user -> ff();
 //        $token = $this->request->token('__token__', 'sha1');
 //        return json_encode($token);
-        $redis=new RedisServer();
+        $redis=new RedisPackage();
         $redis::set('dede','我就笑笑');
         echo $redis::get('dede');
     }
