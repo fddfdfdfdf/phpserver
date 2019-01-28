@@ -19,5 +19,4 @@
 //
 //// 执行应用并响应
 //Container::get('app')->run()->send();
-
 phpinfo();
